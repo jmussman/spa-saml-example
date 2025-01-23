@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!----> index.html
+    Copyright © 2025 Joel A Mussman. All rights reserved.
+-->
+
+<html>
+    <head>
+        <title>Okta SPA SAML</title>
+        <link type="text/css" rel="stylesheet" href="/assets/style/site.css" />
+        <script src="/config.js"></script>
+        <script src="/assets/script/authn.js"></script>
+    </head>
+    <body>
+        <div>
+            <img src="https://raw.githubusercontent.com/jmussman/cdn-fun/main/banners/banner-okta-spa-saml-light.png" alt="logo" />
+            <div class="description">
+                This a bare-bones, single-page application example that handles a SAML authentication.
+                It must run at http://localhost:3000.
+                This is pre-configured to work with a public-facing Okta organization, sign in
+                with "calicojack@pyrates.live", password "P!rates17".
+                The example may be reconfigured to use a public-facing Auth0 tenant with the same user, see the
+                details in the README at <a href="https://github.com/jmussman/okta-spa-saml/">https://github.com/jmussman/okta-spa-saml/</a>.
+            </div>
+
+            <h2 id="saml-configuration">SAML Configuration</h2>
+
+            <div id="configuration" class="configuration">
+                <span class="label">IdP Login URL:</span>
+                <span id="idp-login-url" class="value"></span><br>
+                <span class="label">IdP Entity ID:</span>
+                <span id="idp-entityid" class="value"></span><br>
+                <span class="label certificate">IdP Certificate:</span>
+                <span id="idp-certificate" class="value certificate"></span><br>
+                <span class="label">IdP Response Parameter:</span>
+                <span id="idp-saml-response-param" class="value"></span><br>
+                <span class="label">SP Entity ID:</span>
+                <span id="sp-entityid" class="value"></span><br>
+                <span class="label">SP Login URL:</span>
+                <span id="sp-login-url" class="value"></span><br>
+            </div>
+
+            <h2 id="saml-response">SAML Response</h2>
+
+            <div id="initiate" class="initiate">
+                <span class="label"></span>
+                <span class="value"><button onclick="initiateRequest()">Sign in to see the response</button></span>
+            </div>
+
+            <div id="response" class="response">
+                <span id="saml-assertion" class="value assertion"></span>
+            </div>
+        </div>
+    </body>
+</html>

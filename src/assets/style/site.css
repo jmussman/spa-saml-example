@@ -1,0 +1,59 @@
+
+div.description {
+    width: 1024px;
+}
+
+div.configuration {
+    display: block;
+}
+
+div.initiate {
+    display: block;
+}
+
+div.response {
+    display: none;
+}
+
+span.label {
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+    margin-bottom: 1ex;
+}
+
+span.value {
+    margin-bottom: 1ex;
+}
+
+div.initiate button {
+    width: 250px;
+    background-color: lightblue;
+    border: 1px solid navy;
+    border-radius: 5px;
+    height: 4ex;
+    font-weight: bold;
+    color: navy;
+}
+
+span.label.certificate {
+    vertical-align: top;
+}
+
+span.value.assertion {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1ex;
+    unicode-bidi: embed;
+    font-family: monospace;
+    white-space: pre;
+}
+
+span.value.certificate {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1ex;
+    unicode-bidi: embed;
+    font-family: monospace;
+    white-space: pre;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "okta-spa-saml",
+    "version": "0.0.1",
+    "type": "module",
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    },
+    "scripts": {
+        "start": "nodemon src/server.js"
+    }
+}
