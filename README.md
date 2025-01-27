@@ -16,7 +16,7 @@ to show both the client-side and server-side implementation.
 In regards to the second question, it is possible to do the redirection without server-side changes
 providing two things are true:
 
-1. The identity provider (IdP) wilLl send the assertion using "redirect" instead of POST.
+1. The identity provider (IdP) will send the assertion using "redirect" instead of POST.
 This means that
 it is appended to the query string in the URl, usually as the "SAMLResponse" attribute.
 1. The server will ignore the query string in the request and still serve the SPA normally.
